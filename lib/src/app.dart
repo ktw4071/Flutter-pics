@@ -11,6 +11,7 @@ class AppState extends State<App> {
   Widget build(context) {
     return MaterialApp(
       home: Scaffold(
+        body: Text('$counter'),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
@@ -20,7 +21,7 @@ class AppState extends State<App> {
           },
         ),
         appBar: AppBar(
-          title: Text('$counter')
+          title: Text('Lets see some images')
         )
       )
     );
