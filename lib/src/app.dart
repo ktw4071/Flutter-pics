@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' show get;
 
 class App extends StatefulWidget {
   createState() {
@@ -10,7 +11,8 @@ class AppState extends State<App> {
   int counter = 0;
 
   void fetchImage() {
-
+    counter += 1;
+    get('https://jsonplaceholder.typicode.com/photos/$counter');
   }
 
   Widget build(context) {
